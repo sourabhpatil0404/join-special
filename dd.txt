@@ -1,0 +1,15 @@
+SELECT * FROM students;
+SELECT * FROM course;
+
+SELECT *
+FROM students as s
+RIGHT JOIN course as c
+ON s.id = c.id   
+WHERE s.id is NULL;
+
+
+SELECT *
+FROM students as s
+LEFT JOIN course as c
+ON s.id = c.id
+WHERE c.id is NULL;
